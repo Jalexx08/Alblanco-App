@@ -1,0 +1,33 @@
+{
+	"mugs": [
+		{
+			"id": 1,
+			"name": "Mug Sencillo",
+			"color": "",
+			"desc": "Mug Sencillo",
+			"path_img": "./assets/products/mugs/"
+		}
+	],
+	"termos": [
+		{
+			"id": 1,
+			"name": "Termo liso",
+			"color": "",
+			"desc": "termo liso de 750ml",
+			"path_img": "./assets/products/termos",
+			"size": "750ml"
+
+		}
+	],
+    "souvenir": [
+		{
+			"id": 1,
+			"name": "Cojin",
+			"color": "blanco",
+			"desc": "tCojin 36x36cm blanco",
+			"path_img": "./assets/products/souvenir",
+			"size": "36cm x 36cm"
+
+		}
+	]
+}

@@ -1,0 +1,8 @@
+.grid-products {
+    display: grid;
+    gap: 1.6rem;
+    grid-template-columns: repeat(auto-fit,30rem);
+    margin: 2.5rem 0;
+    place-content: center;
+    width: 100%;
+}
