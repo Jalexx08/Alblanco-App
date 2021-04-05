@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export const ProductCard = ({ id, name, type, color, path_img, desc }) => {
+export const ProductCard = ({ id, name, type, designs, path_img, desc }) => {
 	return (
 		<div className="card">
 			<div
@@ -17,7 +17,11 @@ export const ProductCard = ({ id, name, type, color, path_img, desc }) => {
 			</div>
 			<hr />
 			<div className="card-footer">
-				<Link type="button" className="btn btn-secondary" to="/">
+				<Link
+					type="button"
+					className="btn btn-secondary"
+					to={`./producto/${id}`}
+				>
 					Ver más
 				</Link>
 			</div>

@@ -13,7 +13,7 @@ export const Navbar = () => {
 		setFlagExpand(!flagExpand);
 	};
 
-	 icono = flagExpand ?  'window-close' : 'bars';
+	icono = flagExpand ? 'window-close' : 'bars';
 
 	const handleSubMenu = function () {
 		if (window.innerWidth < 968) {
@@ -33,15 +33,17 @@ export const Navbar = () => {
 		<>
 			<div>
 				<span className="nav-bar" onClick={handleClickMenu}>
-					{
-                        <i className={`fas fa-${icono}`} />
-
-                    } Menú
+					{<i className={`fas fa-${icono}`} />} Menú
 				</span>
 				<nav>
 					<ul className="menu" ref={menu}>
 						<li className="menu__item">
-							<NavLink to="/" className="menu__link" activeClassName="active">
+							<NavLink
+								to="/"
+								className="menu__link"
+								activeClassName="active"
+								onClick={handleClickMenu}
+							>
 								Inicio
 							</NavLink>
 						</li>
@@ -50,6 +52,7 @@ export const Navbar = () => {
 								to="/nosotros"
 								className="menu__link"
 								activeClassName="active"
+								onClick={handleClickMenu}
 							>
 								Nosotros
 							</NavLink>
@@ -65,17 +68,29 @@ export const Navbar = () => {
 							</NavLink>
 							<ul className="submenu" ref={subMenu}>
 								<li className="menu__item">
-									<Link to="/mugs" className="menu__link">
+									<Link
+										to="/mugs"
+										className="menu__link"
+										onClick={handleClickMenu}
+									>
 										Mugs
 									</Link>
 								</li>
 								<li className="menu__item">
-									<Link to="/termos" className="menu__link">
+									<Link
+										to="/termos"
+										className="menu__link"
+										onClick={handleClickMenu}
+									>
 										Termos
 									</Link>
 								</li>
 								<li className="menu__item">
-									<Link to="/sublimacion-y-mas" className="menu__link">
+									<Link
+										to="/sublimacion-y-mas"
+										className="menu__link"
+										onClick={handleClickMenu}
+									>
 										Sublimación y más
 									</Link>
 								</li>
@@ -86,6 +101,7 @@ export const Navbar = () => {
 								to="/contacto"
 								className="menu__link"
 								activeClassName="active"
+								onClick={handleClickMenu}
 							>
 								Contácto
 							</NavLink>

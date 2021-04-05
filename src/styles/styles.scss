@@ -2,7 +2,6 @@
 @import './base/settings';
 @import './base/base';
 
-
 //* Components
 
 @import './components/header';
@@ -10,5 +9,82 @@
 @import './components/productsList';
 @import './components/whatsapp';
 @import './components/card';
+@import './components/carousel';
 @import './components/footer';
 
+.swiper-container {
+	width: 100%;
+	padding: 2rem 0;
+	margin: 2rem 0;
+}
+.main-image {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+}
+#main {
+	width: 70rem;
+}
+
+.thumb-main {
+	list-style: none;
+	max-width: 15vw;
+	height: 15vw;
+	
+}
+input, textarea {
+	border:0;
+	outline: none
+}
+
+form {
+	background-color: $primary-1;
+	border-radius: 1rem;
+	margin: 0 auto;
+	padding: 2rem;
+	margin-bottom: 3vh;
+	margin-top: 2vh;
+	width: 26rem;
+	height: 45vh;
+}
+
+.form-content {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1vh;
+}
+
+.form-input {
+	border: solid 2px #ccc;
+	display: block;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	margin: 1rem 0;
+	&:focus {
+		border-color: $primary-3 ;
+	}
+}
+.center-content{
+	text-align: center;
+	.btn{
+		width: 60%;
+	}
+}
+
+.articles {
+	color: $secondary-2;
+	font-weight: bold;
+	margin: 2rem auto;
+	padding: 0 4rem;
+	text-align: center;
+	text-shadow: 1px 1px $secondary-1;
+	width: 70vw;
+
+}
+
+.subtitle {
+	color: $primary-2;
+	padding-left: 1rem;
+	text-shadow: 1px 1px $primary-1;
+}

@@ -3,7 +3,7 @@ import { ProductList } from '../product/ProductList';
 
 export const TermoScreen = () => {
 	return (
-		<div className="container">
+		<div className="">
 			<h1 className="title-main">Termos</h1>
 
 			<ProductList type="termo" />

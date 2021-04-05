@@ -2,6 +2,7 @@
 	font-family: Helvetica, Arial, sans-serif;
 	margin: 0;
 	padding: 0;
+	text-decoration: none;
 	// list-style: none;
 }
 html {
@@ -9,19 +10,21 @@ html {
 }
 
 body {
-	background-color: lighten($color: $primary-1, $amount: 35);
+	background-color: #EEE;
+	// background-color: lighten($color: $primary-1, $amount: 35);
 	font-size: 1.6rem;
 }
 
 .container {
-    width: 100%;
+	margin: 0 auto;
    
 }
 
 .title-main {
 	color: $primary-3;
+	margin-top: 2rem;
 	text-align: center;
-	margin-top: 1rem;
+	text-shadow: 1px 1px $primary-1;
 }
 
 .btn {
@@ -30,6 +33,8 @@ body {
 	color: #fff;
 	border-radius: 1rem;
 	background-color: transparent;
+	border: none;
+	border-color: transparent;
 }
 
 .btn-primary {
@@ -45,10 +50,15 @@ body {
 	}
 }
 
+.btnBack {
+	margin: 2rem ;
+	text-align: center;
+}
+
 
 @media(min-width: 768px) {
 	.container {
 		width: 80%;
-		margin: 0 auto;
+		
 	}
 }

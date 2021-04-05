@@ -1,180 +1,338 @@
 export const products = [
+	//* Mugs
+	{
+		id: 'mug-color',
+		name: 'Mug de colores',
+		type: 'mug',
+		designs: [
+			'mug-amarillo',
+			'mug-azul',
+			'mug-negro',
+			'mug-rojo',
+			'mug-verde',
+			'mug-naranjado',
+		],
+		path_img: './assets/products/mugs/',
+		desc: '',
+	},
+	{
+		id: 'mug-sencillo',
+		name: 'Mug sencillo',
+		type: 'mug',
+		designs: ['mug-sencillo'],
+		path_img: './assets/products/mugs/',
+		desc: '',
+	},
+	{
+		id: 'mug-cuchara',
+		name: 'Mug cuchara',
+		type: 'mug',
+		designs: ['mug-cuchara'],
+		path_img: './assets/products/mugs/',
+		desc: '',
+	},
+	{
+		id: 'mug-plateado',
+		name: 'Mug plateado',
+		type: 'mug',
+		designs: ['mug-plateado'],
+		path_img: './assets/products/mugs/',
+		desc: '',
+	},
+	{
+		id: 'mug-dorado',
+		name: 'Mug dorado',
+		type: 'mug',
+		designs: ['mug-dorado'],
+		path_img: './assets/products/mugs/',
+		desc: '',
+	},
+	{
+		id: 'mug-magico',
+		name: 'Mug mágico',
+		type: 'mug',
+		designs: ['mug-magico'],
+		path_img: './assets/products/mugs/',
+		desc: '',
+	},
+	{
+		id: 'mug-tapa-silicona',
+		name: 'Mug tapa silicona',
+		type: 'mug',
+		designs: ['mug-tapa-silicona'],
+		path_img: './assets/products/mugs/',
+		desc: '',
+	},
+	{
+		id: 'mug-pareja',
+		name: 'Mug pareja',
+		type: 'mug',
+		designs: ['mug-pareja'],
+		path_img: './assets/products/mugs/',
+		desc: '',
+	},
+	{
+		id: 'mug-opaco',
+		name: 'Mug opaco',
+		type: 'mug',
+		designs: ['mug-opaco'],
+		path_img: './assets/products/mugs/',
+		desc: '',
+	},
+	{
+		id: 'mug-cervecero',
+		name: 'Mug cervecero opalizado',
+		type: 'mug',
+		designs: ['mug-cervecero'],
+		path_img: './assets/products/mugs/',
+		desc: '',
+	},
+	{
+		id: 'mug-peltre',
+		name: 'Mug peltre',
+		type: 'mug',
+		designs: ['mug-peltre'],
+		path_img: './assets/products/mugs/',
+		desc: '',
+	},
 
-    //* Mugs
-    {
-        'id': 'mug-color',
-        'name': 'Mug de colores',
-        'type' : 'mug',
-        'color': [ 'mug-amarillo','mug-azul','mug-negro', 'mug-rojo', 'mug-verde', 'mug-naranjado'],
-        'path_img': './assets/products/mugs/',
-        'desc': ''
-    },
-    {
-        'id': 'mug-sencillo',
-        'name': 'Mug sencillo',
-        'type' : 'mug',
-        'color': '',
-        'path_img': './assets/products/mugs/',
-        'desc': ''
-    },
-    {
-        'id': 'mug-cuchara',
-        'name': 'Mug cuchara',
-        'type' : 'mug',
-        'color': '',
-        'path_img': './assets/products/mugs/',
-        'desc': ''
-    },
-    {
-        'id': 'mug-plateado',
-        'name': 'Mug plateado',
-        'type' : 'mug',
-        'color': '',
-        'path_img': './assets/products/mugs/',
-        'desc': ''
-    },
-    {
-        'id': 'mug-dorado',
-        'name': 'Mug dorado',
-        'type' : 'mug',
-        'color': '',
-        'path_img': './assets/products/mugs/',
-        'desc': ''
-    },
-    {
-        'id': 'mug-magico',
-        'name': 'Mug mágico',
-        'type' : 'mug',
-        'color': '',
-        'path_img': './assets/products/mugs/',
-        'desc': ''
-    },
-    {
-        'id': 'mug-tapa-silicona',
-        'name': 'Mug tapa silicona',
-        'type' : 'mug',
-        'color': '',
-        'path_img': './assets/products/mugs/',
-        'desc': ''
-    },
-    {
-        'id': 'mug-pareja',
-        'name': 'Mug pareja',
-        'type' : 'mug',
-        'color': '',
-        'path_img': './assets/products/mugs/',
-        'desc': ''
-    },
-    {
-        'id': 'mug-opaco',
-        'name': 'Mug opaco',
-        'type' : 'mug',
-        'color': '',
-        'path_img': './assets/products/mugs/',
-        'desc': ''
-    },
-    {
-        'id': 'mug-cervecero',
-        'name': 'Mug cervecero opalizado',
-        'type' : 'mug',
-        'color': '',
-        'path_img': './assets/products/mugs/',
-        'desc': ''
-    },
-    {
-        'id': 'mug-peltre',
-        'name': 'Mug peltre',
-        'type' : 'mug',
-        'color': '',
-        'path_img': './assets/products/mugs/',
-        'desc': ''
-    },
+	//* Termos
+	{
+		id: 'termo-600',
+		name: 'Termo 600ml',
+		type: 'termo',
+		designs: ['termo-600-blanco', 'termo-600-plateado'],
+		path_img: './assets/products/termos/',
+		desc: '',
+	},
+	{
+		id: 'termo-viajero',
+		name: 'Termo viajero',
+		type: 'termo',
+		designs: ['termo-viajero'],
+		path_img: './assets/products/termos/',
+		desc: '',
+	},
+	{
+		id: 'termo-deportivo',
+		name: 'Termo deportivo liso 750ml',
+		type: 'termo',
+		designs: ['termo-deportivo'],
+		path_img: './assets/products/termos/',
+		desc: '',
+	},
+	{
+		id: 'termo-750',
+		name: 'Termo 750ml',
+		type: 'termo',
+		designs: ['termo-750'],
+		path_img: './assets/products/termos/',
+		desc: '',
+	},
+	{
+		id: 'lata-cerveza',
+		name: 'Lata Cerveza',
+		type: 'termo',
+		designs: ['lata-cerveza'],
+		path_img: './assets/products/termos/',
+		desc: '',
+	},
 
-    //* Termos
-    {
-        'id': 'termo-600',
-        'name': 'Termo 600ml blanco',
-        'type' : 'termo',
-        'color': ['blanco', 'platedo'],
-        'path_img': './assets/products/termos/',
-        'desc': ''
-    },
-    {
-        'id': 'termo-viajero',
-        'name': 'Termo viajero',
-        'type' : 'termo',
-        'color': '',
-        'path_img': './assets/products/termos/',
-        'desc': ''
-    },
-    {
-        'id': 'termo-deportivo',
-        'name': 'Termo deportivo liso 750ml',
-        'type' : 'termo',
-        'color': '',
-        'path_img': './assets/products/termos/',
-        'desc': ''
-    },
-    {
-        'id': 'termo-750',
-        'name': 'Termo 750ml',
-        'type' : 'termo',
-        'color': '',
-        'path_img': './assets/products/termos/',
-        'desc': ''
-    },
-    {
-        'id': 'lata-cerveza',
-        'name': 'Lata Cerveza',
-        'type' : 'termo',
-        'color': '',
-        'path_img': './assets/products/termos/',
-        'desc': ''
-    },
+	//* Sublimación y más
 
-    //* Sublimación y más
+	{
+		id: 'sts-mameluco',
+		name: 'Mamelucos',
+		type: 'sublymas',
+		designs: ['sts-mameluco'],
+		path_img: './assets/products/sts/',
+		desc: '',
+	},
+	{
+		id: 'sts-cojin',
+		name: 'Cojin',
+		type: 'sublymas',
+		designs: ['sts-cojin'],
+		path_img: './assets/products/sts/',
+		desc: '',
+	},
+	{
+		id: 'sts-tula',
+		name: 'Tulas',
+		type: 'sublymas',
+		designs: ['sts-tula'],
+		path_img: './assets/products/sts/',
+		desc: '',
+	},
+	{
+		id: 'sts-rompecabeza',
+		name: 'Rompecabezas',
+		type: 'sublymas',
+		designs: ['sts-rompecabeza'],
+		path_img: './assets/products/sts/',
+		desc: '',
+	},
+	{
+		id: 'sts-pad-mouse',
+		name: 'Pad mouse',
+		type: 'sublymas',
+		designs: ['sts-pad-mouse'],
+		path_img: './assets/products/sts/',
+		desc: '',
+	},
 
-    {
-        'id': 'sts-mameluco',
-        'name': 'Mamelucos',
-        'type' : 'sublymas',
-        'color': '',
-        'path_img': './assets/products/sts/',
-        'desc': ''
-    },
-    {
-        'id': 'sts-cojin',
-        'name': 'Cojin',
-        'type' : 'sublymas',
-        'color': '',
-        'path_img': './assets/products/sts/',
-        'desc': ''
-    },
-    {
-        'id': 'sts-tula',
-        'name': 'Tulas',
-        'type' : 'sublymas',
-        'color': '',
-        'path_img': './assets/products/sts/',
-        'desc': ''
-    },
-    {
-        'id': 'sts-rompecabeza',
-        'name': 'Rompecabezas',
-        'type' : 'sublymas',
-        'color': '',
-        'path_img': './assets/products/sts/',
-        'desc': ''
-    },
-    {
-        'id': 'sts-pad-mouse',
-        'name': 'Pad mouse',
-        'type' : 'sublymas',
-        'color': '',
-        'path_img': './assets/products/sts/',
-        'desc': ''
-    },
+    //* DESTACADOS
 
+	//* mugs
+	{
+		id: 'mug-1',
+		name: 'Mugs',
+		type: 'mug-destacado',
+		designs: ['mug-1'],
+		path_img: './assets/products/destacados/',
+		desc: '',
+	},
+	{
+		id: 'mug-2',
+		name: 'Mugs',
+		type: 'mug-destacado',
+		designs: ['mug-2'],
+		path_img: './assets/products/destacados/',
+		desc: '',
+	},
+	{
+		id: 'mug-3',
+		name: 'Mugs',
+		type: 'mug-destacado',
+		designs: ['mug-3'],
+		path_img: './assets/products/destacados/',
+		desc: '',
+	},
+	{
+		id: 'mug-4',
+		name: 'Mugs',
+		type: 'mug-destacado',
+		designs: ['mug-4'],
+		path_img: './assets/products/destacados/',
+		desc: '',
+	},
+	{
+		id: 'mug-5',
+		name: 'Mugs',
+		type: 'mug-destacado',
+		designs: ['mug-5'],
+		path_img: './assets/products/destacados/',
+		desc: '',
+	},
+	{
+		id: 'mug-6',
+		name: 'Mugs',
+		type: 'mug-destacado',
+		designs: ['mug-6'],
+		path_img: './assets/products/destacados/',
+		desc: '',
+	},
 
+	//* termos
 
-]
+	{
+		id: 'termo-1',
+		name: 'Termos',
+		type: 'termo-destacado',
+		designs: ['termo-1'],
+		path_img: './assets/products/destacados/',
+		desc: '',
+	},
+	{
+		id: 'termo-2',
+		name: 'Termos',
+		type: 'termo-destacado',
+		designs: ['termo-2'],
+		path_img: './assets/products/destacados/',
+		desc: '',
+	},
+	{
+		id: 'termo-3',
+		name: 'Termos',
+		type: 'termo-destacado',
+		designs: ['termo-3'],
+		path_img: './assets/products/destacados/',
+		desc: '',
+	},
+	{
+		id: 'termo-4',
+		name: 'Termos',
+		type: 'termo-destacado',
+		designs: ['termo-4'],
+		path_img: './assets/products/destacados/',
+		desc: '',
+	},
+	{
+		id: 'termo-5',
+		name: 'Termos',
+		type: 'termo-destacado',
+		designs: ['termo-5'],
+		path_img: './assets/products/destacados/',
+		desc: '',
+	},
+	{
+		id: 'termo-6',
+		name: 'Termos',
+		type: 'termo-destacado',
+		designs: ['termo-6'],
+		path_img: './assets/products/destacados/',
+		desc: '',
+	},
+
+	//*Sublimación y más
+
+	{
+		id: 'sublymas-1',
+		name: 'Sublimaciones, souvenir y más',
+		type: 'sublymas-destacado',
+		designs: ['sublymas-1'],
+		path_img: './assets/products/destacados/',
+		desc: '',
+	},
+	{
+		id: 'sublymas-2',
+		name: 'Sublimaciones, souvenir y más',
+		type: 'sublymas-destacado',
+		designs: ['sublymas-2'],
+		path_img: './assets/products/destacados/',
+		desc: '',
+	},
+	{
+		id: 'sublymas-3',
+		name: 'Sublimaciones, souvenir y más',
+		type: 'sublymas-destacado',
+		designs: ['sublymas-3'],
+		path_img: './assets/products/destacados/',
+		desc: '',
+	},
+	{
+		id: 'sublymas-4',
+		name: 'Sublimaciones, souvenir y más',
+		type: 'sublymas-destacado',
+		designs: ['sublymas-4'],
+		path_img: './assets/products/destacados/',
+		desc: '',
+	},
+	{
+		id: 'sublymas-5',
+		name: 'Sublimaciones, souvenir y más',
+		type: 'sublymas-destacado',
+		designs: ['sublymas-5'],
+		path_img: './assets/products/destacados/',
+		desc: '',
+	},
+	{
+		id: 'sublymas-6',
+		name: 'Sublimaciones, souvenir y más',
+		type: 'sublymas-destacado',
+		designs: ['sublymas-6'],
+		path_img: './assets/products/destacados/',
+		desc: '',
+	},
+
+];

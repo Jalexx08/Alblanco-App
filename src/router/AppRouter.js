@@ -19,7 +19,7 @@ export const AppRouter = () => {
 					<Route exact path="/" component={HomeScreen} />
 					<Route exact path="/nosotros" component={AboutusScreen} />
 					<Route exact path="/contacto" component={ContactScreen} />
-					<Route exact path="/producto:produtId" component={ProductScreen} />
+					<Route exact path="/producto/:productId" component={ProductScreen} />
 					<Route exact path="/mugs" component={MugScreen} />
 					<Route exact path="/termos" component={TermoScreen} />
 					<Route exact path="/sublimacion-y-mas" component={SublymaScreen} />
