@@ -6,7 +6,7 @@ export const Footer = () => {
 			<div className="footer-grid container">
 				<div className="section-1">
 					<img
-						src="./assets/logo-alblanco.png"
+						src="../assets/logo-alblanco.png"
 						width={250}
 						alt="logo-alblanco"
 					/>

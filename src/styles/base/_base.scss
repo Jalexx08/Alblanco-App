@@ -10,14 +10,13 @@ html {
 }
 
 body {
-	background-color: #EEE;
+	background-color: #eee;
 	// background-color: lighten($color: $primary-1, $amount: 35);
 	font-size: 1.6rem;
 }
 
 .container {
 	margin: 0 auto;
-   
 }
 
 .title-main {
@@ -28,13 +27,14 @@ body {
 }
 
 .btn {
-	text-decoration: none;
-	padding: 1rem 2rem;
-	color: #fff;
 	border-radius: 1rem;
 	background-color: transparent;
 	border: none;
 	border-color: transparent;
+	color: #fff;
+	font-weight: bold;
+	padding: 1rem 2rem;
+	text-decoration: none;
 }
 
 .btn-primary {
@@ -51,14 +51,19 @@ body {
 }
 
 .btnBack {
-	margin: 2rem ;
+	margin: 2rem;
 	text-align: center;
 }
 
+.center-content {
+	text-align: center;
+	.btn {
+		width: 60%;
+	}
+}
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
 	.container {
 		width: 80%;
-		
 	}
 }

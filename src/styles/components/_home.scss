@@ -1,0 +1,24 @@
+
+.articles {
+	color: $secondary-2;
+	font-weight: bold;
+	margin: 2rem auto;
+	text-align: center;
+	text-shadow: 1px 1px $secondary-1;
+	max-width: 60vw;
+
+}
+
+.subtitle {
+	color: $primary-2;
+	padding-left: 1rem;
+	text-shadow: 1px 1px $primary-1;
+}
+
+.container-img{
+	max-width: 50rem;
+	height: 30rem;
+	margin: 2rem auto;
+	overflow: hidden;
+	align-items: center;
+}

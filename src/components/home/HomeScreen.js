@@ -123,7 +123,7 @@ export const HomeScreen = () => {
 			</Swiper>
 
 			<Link to="/sublimacion-y-mas">
-				<h2 className="subtitle">Sublimaciones, souvenir y más</h2>
+				<h2 className="subtitle">Sublimaciones y más</h2>
 			</Link>
 
 			<Swiper

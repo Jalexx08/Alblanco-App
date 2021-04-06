@@ -11,11 +11,14 @@ export const AboutusScreen = () => {
 					mirada, una imagen no lo pienses tanto, contáctanos y atina a tus
 					ideas.
 				</p>
-				<p className="articles">
-					Sint en 2021 occaecat reprehenderit non adipisicing aliquip qui
-					adipisicing id aliqua do tempor et. int ex ex occaecat reprehenderit
-					non adipisicing aliquip qui adipisicing id aliqua do tempor et.
-				</p>
+				<figure
+					className="container-img"
+					style={{
+						backgroundImage: 'url("./assets/img/aboutus.jpg")',
+						backgroundSize: 'cover',
+						backgroundPosition: 'center',
+					}}
+				></figure>
 			</section>
 		</div>
 	);

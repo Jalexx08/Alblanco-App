@@ -1,0 +1,32 @@
+input, textarea {
+	border:0;
+	outline: none
+}
+
+form {
+	background-color: $primary-1;
+	border-radius: 1rem;
+	margin: 0 auto;
+	padding: 2rem;
+	margin-bottom: 3vh;
+	margin-top: 2vh;
+	width: 26rem;
+	height: 45vh;
+}
+
+.form-content {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1vh;
+}
+
+.form-input {
+	border: solid 2px #ccc;
+	display: block;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	margin: 1rem 0;
+	&:focus {
+		border-color: $primary-3 ;
+	}
+}

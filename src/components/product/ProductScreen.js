@@ -25,7 +25,7 @@ export const ProductScreen = ({ history }) => {
 
 	const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
-	const { id, name, type, designs, path_img, desc } = product;
+	const { name, designs, path_img, } = product;
 
 	return (
 		<div className="container">
@@ -67,8 +67,6 @@ export const ProductScreen = ({ history }) => {
 				slidesPerView={3}
 				tag="section"
 				wrapperTag="ul"
-				// loop={true}
-				// navigation
 				onSwiper={setThumbsSwiper}
 			>
 				{designs.map((color, i) => (
