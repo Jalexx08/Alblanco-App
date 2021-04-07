@@ -39,6 +39,7 @@ export const ProductScreen = ({ history }) => {
 					wrapperTag="ul"
 					navigation
 					pagination
+					loop ={true}
 				>
 					{designs.map((color, i) => (
 						<SwiperSlide

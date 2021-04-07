@@ -11,7 +11,7 @@ form {
 	margin-bottom: 3vh;
 	margin-top: 2vh;
 	width: 26rem;
-	height: 45vh;
+	min-height: 45vh;
 }
 
 .form-content {
@@ -29,4 +29,13 @@ form {
 	&:focus {
 		border-color: $primary-3 ;
 	}
+}
+
+.caption-error{
+	color: rgb(151, 12, 12);
+	background-color: rgb(231, 172, 172);
+	border-radius: 0.5rem;
+	padding: 1rem;
+	margin: 1rem auto;
+	text-align: center;
 }

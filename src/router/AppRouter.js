@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
 import { AboutusScreen } from '../components/aboutus/AboutusScreen';
 import { ContactScreen } from '../components/contact/ContactScreen';
@@ -23,6 +23,8 @@ export const AppRouter = () => {
 					<Route exact path="/mugs" component={MugScreen} />
 					<Route exact path="/termos" component={TermoScreen} />
 					<Route exact path="/sublimacion-y-mas" component={SublymaScreen} />
+
+					<Redirect to ="/"/>
 				</Switch>
 			</div>
 		</Router>

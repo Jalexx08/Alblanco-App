@@ -72,7 +72,7 @@ export const HomeScreen = () => {
 				spaceBetween={50}
 				slidesPerView={1}
 				navigation
-				// pagination={{ clickable: true }}
+				loop = {true}
 				scrollbar={{ draggable: true }}
 				onSwiper={(swiper) => console.log(swiper)}
 				onSlideChange={() => console.log('slide change')}
@@ -104,7 +104,7 @@ export const HomeScreen = () => {
 				spaceBetween={50}
 				slidesPerView={1}
 				navigation
-				// pagination={{ clickable: true }}
+				loop = {true}
 				scrollbar={{ draggable: true }}
 				onSwiper={(swiper) => console.log(swiper)}
 				onSlideChange={() => console.log('slide change')}
@@ -135,7 +135,7 @@ export const HomeScreen = () => {
 				spaceBetween={50}
 				slidesPerView={1}
 				navigation
-				// pagination={{ clickable: true }}
+				loop = {true}
 				scrollbar={{ draggable: true }}
 				onSwiper={(swiper) => console.log(swiper)}
 				onSlideChange={() => console.log('slide change')}
