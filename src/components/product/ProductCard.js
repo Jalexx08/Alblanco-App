@@ -1,13 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export const ProductCard = ({ id, name, type, designs, path_img, desc }) => {
+const productsImg = require.context('../../assets/img/products', true);
+
+export const ProductCard = ({ id, name, type, desc }) => {
+
 	return (
 		<div className="card">
 			<div
 				className="card-img"
 				style={{
-					backgroundImage: `url('${path_img}${id}.jpg')`,
+					backgroundImage: `url('${
+						productsImg(`./${type}/${id}.jpg`).default
+					}')`,
 					backgroundSize: 'cover',
 				}}
 			></div>

@@ -28,6 +28,8 @@ SwiperCore.use([
 	Thumbs,
 ]);
 
+const productsImg = require.context('../../assets/img/products',true);
+
 export const HomeScreen = () => {
 	const styleImg = {
 		objectFit: 'cover',
@@ -44,9 +46,9 @@ export const HomeScreen = () => {
 		},
 	};
 
-	const typeMug = 'mug-destacado';
-	const typeTermo = 'termo-destacado';
-	const typeSublymas = 'sublymas-destacado';
+	const typeMug = 'mugs-destacados';
+	const typeTermo = 'termos-destacados';
+	const typeSublymas = 'sublymas-destacados';
 
 	const mugs = useMemo(() => getProductsByType(typeMug), [typeMug]);
 	const termos = useMemo(() => getProductsByType(typeTermo), [typeTermo]);
@@ -74,15 +76,15 @@ export const HomeScreen = () => {
 				navigation
 				loop = {true}
 				scrollbar={{ draggable: true }}
-				onSwiper={(swiper) => console.log(swiper)}
-				onSlideChange={() => console.log('slide change')}
+				// onSwiper={(swiper) => console.log(swiper)}
+				// onSlideChange={() => console.log('slide change')}
 			>
 				{/* to={`./producto/${id}`} */}
 				{mugs.map((mug) => (
 					<SwiperSlide key={mug.id} tag="li" style={{ listStyle: 'none' }}>
 						<Link to={`./producto/${mug.id}`}>
 							<img
-								src={`${mug.path_img}${mug.id}.jpg`}
+								src={productsImg(`./${mug.type}/${mug.id}.jpg`).default}
 								style={styleImg}
 								alt={mug.name}
 							/>
@@ -106,14 +108,14 @@ export const HomeScreen = () => {
 				navigation
 				loop = {true}
 				scrollbar={{ draggable: true }}
-				onSwiper={(swiper) => console.log(swiper)}
-				onSlideChange={() => console.log('slide change')}
+				// onSwiper={(swiper) => console.log(swiper)}
+				// onSlideChange={() => console.log('slide change')}
 			>
 				{termos.map((termo) => (
 					<SwiperSlide key={termo.id} tag="li" style={{ listStyle: 'none' }}>
 						<Link to={`./producto/${termo.id}`}>
 							<img
-								src={`${termo.path_img}${termo.id}.jpg`}
+								src={productsImg(`./${termo.type}/${termo.id}.jpg`).default}
 								style={styleImg}
 								alt={termo.name}
 							/>
@@ -137,14 +139,14 @@ export const HomeScreen = () => {
 				navigation
 				loop = {true}
 				scrollbar={{ draggable: true }}
-				onSwiper={(swiper) => console.log(swiper)}
-				onSlideChange={() => console.log('slide change')}
+				// onSwiper={(swiper) => console.log(swiper)}
+				// onSlideChange={() => console.log('slide change')}
 			>
 				{sublymas.map((sublym) => (
 					<SwiperSlide key={sublym.id} tag="li" style={{ listStyle: 'none' }}>
 						<Link to={`./producto/${sublym.id}`}>
 							<img
-								src={`${sublym.path_img}${sublym.id}.jpg`}
+								src={productsImg(`./${sublym.type}/${sublym.id}.jpg`).default}
 								style={styleImg}
 								alt={sublym.name}
 							/>

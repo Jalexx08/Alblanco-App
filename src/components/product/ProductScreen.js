@@ -25,7 +25,9 @@ export const ProductScreen = ({ history }) => {
 
 	const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
-	const { name, designs, path_img, } = product;
+	const { name, designs, type, path_img } = product;
+
+	const productsImg = require.context('../../assets/img/products', true);
 
 	return (
 		<div className="container">
@@ -39,7 +41,7 @@ export const ProductScreen = ({ history }) => {
 					wrapperTag="ul"
 					navigation
 					pagination
-					loop ={true}
+					loop={true}
 				>
 					{designs.map((color, i) => (
 						<SwiperSlide
@@ -49,7 +51,8 @@ export const ProductScreen = ({ history }) => {
 							zoom={true}
 						>
 							<img
-								src={`.${path_img}${color}.jpg`}
+								// src={`.${path_img}${color}.jpg`}
+								src={productsImg(`./${type}/${color}.jpg`).default}
 								alt={color}
 								style={{
 									objectFit: 'cover',
@@ -74,7 +77,7 @@ export const ProductScreen = ({ history }) => {
 					<SwiperSlide key={`color-${i}`} tag="li" className="thumb-main">
 						<figure className="thumb-item">
 							<img
-								src={`.${path_img}${color}.jpg`}
+								src={productsImg(`./${type}/${color}.jpg`).default}
 								alt={color}
 								style={{
 									objectFit: 'cover',

@@ -15,7 +15,7 @@ export const ProductList = ({ type }) => {
 				))}
 			</div>
 			<div className="btnBack">
-				<Link  to ="/" className="btn btn-secondary">
+				<Link to="/" className="btn btn-secondary">
 					Regresar
 				</Link>
 			</div>

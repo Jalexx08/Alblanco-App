@@ -1,10 +1,13 @@
 .card {
-	border: 1px solid $dark-grey;
-	box-shadow: 3px 3px $dark-grey;
-	border-radius: 2rem;
+	border: 1px solid $light-grey;
 	background-color: lighten($color: $primary-3, $amount: 15);
+	border-radius: 2rem;
 	color: lighten($color: $primary-1, $amount: 35);
 	overflow: hidden;
+
+	hr {
+		border-color: $primary-3;
+	}
 }
 
 .card-img {
@@ -19,12 +22,11 @@
 
 .card-body,
 .card-footer {
-	text-align: center;
 	padding: 1rem;
+	text-align: center;
 }
 
-.card-body h5{
-	// background-color: $primary-1;
+.card-body h5 {
 	h5 {
 		font-size: 2rem;
 	}
@@ -35,7 +37,6 @@
 }
 
 @media (max-width: 640px) {
-
 	.card {
 		margin: 0 0.5rem;
 		font-size: 1rem;
@@ -48,5 +49,4 @@
 			font-size: 1.2rem;
 		}
 	}
-
 }

@@ -1,18 +1,17 @@
 
 .articles {
 	color: $secondary-2;
-	font-weight: bold;
+	font-weight: 500;
 	margin: 2rem auto;
 	text-align: center;
-	text-shadow: 1px 1px $secondary-1;
 	max-width: 60vw;
 
 }
 
 .subtitle {
 	color: $primary-2;
+	font-weight: 700;
 	padding-left: 1rem;
-	text-shadow: 1px 1px $primary-1;
 }
 
 .container-img{

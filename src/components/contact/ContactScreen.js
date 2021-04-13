@@ -27,7 +27,7 @@ export const ContactScreen = () => {
 	}
 
 	const handleValidateEmail =()=>{
-		(emailRegex.test(name.trim())) ? setEmailValidate(false) : setEmailValidate(true);
+		(emailRegex.test(email.trim())) ? setEmailValidate(false) : setEmailValidate(true);
 	}
 
 	const handleValidateMsg =()=>{
@@ -71,7 +71,7 @@ export const ContactScreen = () => {
 						autoComplete="off"
 						type="text"
 						name="name"
-						placeholder="Ingresa tu nombre"
+						placeholder="Tu nombre"
 						value={name}
 						onChange={handleInputChange}
 						onKeyUp={handleValidateName}
@@ -85,7 +85,7 @@ export const ContactScreen = () => {
 						autoComplete="off"
 						type="text"
 						name="email"
-						placeholder="Ingresa tu correo"
+						placeholder="Tu correo"
 						value={email}
 						onChange={handleInputChange}
 						onKeyUp={handleValidateEmail}
@@ -99,7 +99,7 @@ export const ContactScreen = () => {
 						autoComplete="off"
 						type="text"
 						name="message"
-						placeholder="Ingresa tu mensaje"
+						placeholder="Déjanos tu mensaje"
 						value={message}
 						onChange={handleInputChange}
 						onKeyUp={handleValidateMsg}

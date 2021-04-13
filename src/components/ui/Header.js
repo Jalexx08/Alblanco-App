@@ -2,13 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar } from './Navbar';
 
+import logoHeader from '../../assets/img/logo/logo-header.png';
+
 export const Header = () => {
 	return (
 		<>
 			<div className="header">
 				<div className="header__logo">
 					<Link to="/">
-						<img src="../assets/logo-alblanco.png" width={250} alt="logo-alblanco" />
+						<img src={logoHeader} width={250} alt="logo-alblanco" />
 					</Link>
 				</div>
 				<ul className="header__social">

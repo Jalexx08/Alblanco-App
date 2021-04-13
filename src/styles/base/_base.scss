@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
 * {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Poppins', sans-serif;
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
@@ -7,12 +9,13 @@
 }
 html {
 	font-size: 62.5%;
+
 }
 
 body {
 	background-color: #eee;
-	// background-color: lighten($color: $primary-1, $amount: 35);
 	font-size: 1.6rem;
+	
 }
 
 .container {
@@ -21,9 +24,9 @@ body {
 
 .title-main {
 	color: $primary-3;
+	font-weight: 700 ;
 	margin-top: 2rem;
 	text-align: center;
-	text-shadow: 1px 1px $primary-1;
 }
 
 .btn {
@@ -60,6 +63,10 @@ body {
 	.btn {
 		width: 60%;
 	}
+}
+
+.banners {
+	width: 100%;
 }
 
 @media (min-width: 768px) {
