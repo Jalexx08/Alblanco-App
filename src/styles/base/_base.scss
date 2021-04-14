@@ -5,8 +5,8 @@
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
-	// list-style: none;
 }
+
 html {
 	font-size: 62.5%;
 
@@ -27,6 +27,15 @@ body {
 	font-weight: 700 ;
 	margin-top: 2rem;
 	text-align: center;
+}
+
+.subtitle {
+	color: $primary-2;
+	font-weight: 700;
+	padding-left: 1rem;
+}
+.img-fluid {
+	width: 100%;
 }
 
 .btn {

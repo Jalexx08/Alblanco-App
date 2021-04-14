@@ -25,7 +25,7 @@ export const ProductScreen = ({ history }) => {
 
 	const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
-	const { name, designs, type, path_img } = product;
+	const { name, designs, type } = product;
 
 	const productsImg = require.context('../../assets/img/products', true);
 

@@ -1,0 +1,62 @@
+.aboutus-main {
+	align-items: center;
+	display: grid;
+	gap: 0;
+	grid-template-columns: 1fr;
+	justify-content: center;
+    margin: 2rem 0;
+    padding: 1rem;
+	text-align: center;
+    p{
+        margin: 1rem 0;
+    }
+}
+
+.img-aboutus {
+    padding: 2rem;
+}
+
+.missionVision-box {
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: 1fr;
+	justify-content: center;
+    margin-bottom: 2rem;
+	text-align: center;
+}
+
+.card-aboutus {
+    border-radius: 2rem;
+    line-height: 3rem;
+    padding: 1rem;
+    h2 {
+        margin-bottom: 1rem;
+    }
+}
+
+.divider {
+    border-color: $primary-3;
+    border-width: 0.2rem;
+    margin: 1rem;
+}
+
+@media (min-width: 640px) {
+	.missionVision-box {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 3rem;
+	}
+	.aboutus-main {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 3rem;
+		text-align: left;
+        padding: 2rem;
+
+        p{
+            margin: 2rem 0;
+        }
+	}
+
+    .card-aboutus{
+        padding: 2rem;
+    }
+}
