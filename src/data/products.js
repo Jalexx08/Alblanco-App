@@ -186,7 +186,7 @@ export const products = [
 	//* mugs
 	{
 		id: 'mug-1',
-		name: 'Mugs OK',
+		name: 'Mug OK',
 		type: 'mugs-destacados',
 		designs: ['mug-1'],
 		path_img: './assets/products/destacados/',
@@ -194,7 +194,7 @@ export const products = [
 	},
 	{
 		id: 'mug-2',
-		name: 'Mugs color interno azul',
+		name: 'Mug color interno azul',
 		type: 'mugs-destacados',
 		designs: ['mug-2'],
 		path_img: './assets/products/destacados/',
@@ -202,7 +202,7 @@ export const products = [
 	},
 	{
 		id: 'mug-3',
-		name: 'Mugs peltre',
+		name: 'Mug peltre',
 		type: 'mugs-destacados',
 		designs: ['mug-3'],
 		path_img: './assets/products/destacados/',
@@ -210,7 +210,7 @@ export const products = [
 	},
 	{
 		id: 'mug-4',
-		name: 'Mugs OK color interno verde claro',
+		name: 'Mug OK color interno verde claro',
 		type: 'mugs-destacados',
 		designs: ['mug-4'],
 		path_img: './assets/products/destacados/',
@@ -218,7 +218,7 @@ export const products = [
 	},
 	{
 		id: 'mug-5',
-		name: 'Mugs negro recuadro bl',
+		name: 'Mug negro recuadro bl',
 		type: 'mugs-destacados',
 		designs: ['mug-5'],
 		path_img: './assets/products/destacados/',
@@ -226,7 +226,7 @@ export const products = [
 	},
 	{
 		id: 'mug-6',
-		name: 'Mugs cervecero opalizado',
+		name: 'Mug cervecero opalizado',
 		type: 'mugs-destacados',
 		designs: ['mug-6'],
 		path_img: './assets/products/destacados/',
@@ -305,7 +305,7 @@ export const products = [
 	{
 		id: 'sublymas-3',
 		name: 'Camiseta hombre negra',
-		type: 'sublymas-destacado',
+		type: 'sublymas-destacados',
 		designs: ['sublymas-3'],
 		path_img: './assets/products/destacados/',
 		desc: '',
@@ -313,7 +313,7 @@ export const products = [
 	{
 		id: 'sublymas-4',
 		name: 'Cojin',
-		type: 'sublymas-destacado',
+		type: 'sublymas-destacados',
 		designs: ['sublymas-4'],
 		path_img: './assets/products/destacados/',
 		desc: '',
@@ -321,7 +321,7 @@ export const products = [
 	{
 		id: 'sublymas-5',
 		name: 'Blusa mujer',
-		type: 'sublymas-destacado',
+		type: 'sublymas-destacados',
 		designs: ['sublymas-5'],
 		path_img: './assets/products/destacados/',
 		desc: '',
@@ -329,7 +329,7 @@ export const products = [
 	{
 		id: 'sublymas-6',
 		name: 'Cojin',
-		type: 'sublymas-destacado',
+		type: 'sublymas-destacados',
 		designs: ['sublymas-6'],
 		path_img: './assets/products/destacados/',
 		desc: '',

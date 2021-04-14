@@ -32,6 +32,7 @@ SwiperCore.use([
 ]);
 
 const productsImg = require.context('../../assets/img/products', true);
+console.log(productsImg(`./sublymas-destacados/sublymas-3.jpg`))
 
 export const HomeScreen = () => {
 	const styleImg = {
@@ -59,6 +60,8 @@ export const HomeScreen = () => {
 		typeSublymas,
 	]);
 
+	
+	
 	return (
 		<>
 			<img src={mainPoster} alt="main poster" className="img-fluid" />
@@ -159,7 +162,7 @@ export const HomeScreen = () => {
 					loop={true}
 					scrollbar={{ draggable: true }}
 					// onSwiper={(swiper) => console.log(swiper)}
-					// onSlideChange={() => console.log('slide change')}
+					// onSlideChange={() => console.log(productsImg(`./sublymas-destacados`))}
 				>
 					{sublymas.map((sublym) => (
 						<SwiperSlide key={sublym.id} tag="li" style={{ listStyle: 'none' }}>
