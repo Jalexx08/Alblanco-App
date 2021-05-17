@@ -1,5 +1,5 @@
-import React, { useMemo } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React, { useMemo } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {
 	EffectCoverflow,
 	Navigation,
@@ -7,20 +7,17 @@ import SwiperCore, {
 	Scrollbar,
 	A11y,
 	Thumbs,
-} from 'swiper';
+} from "swiper";
 
 // Import Swiper styles
-import 'swiper/swiper.scss';
+import "swiper/swiper.scss";
 // import 'swiper/components/effect-cube/effect-cube.scss';
-import 'swiper/components/effect-coverflow/effect-coverflow.scss';
-import 'swiper/components/navigation/navigation.scss';
-import 'swiper/components/pagination/pagination.scss';
-import 'swiper/components/scrollbar/scrollbar.scss';
-import { getProductsByType } from '../../selectors/getProductsByType';
-import { Link } from 'react-router-dom';
-
-import mainPoster from '../../assets/img/banners/main-poster.jpg';
-import cup from '../../assets/img/tza.png';
+import "swiper/components/effect-coverflow/effect-coverflow.scss";
+import "swiper/components/navigation/navigation.scss";
+import "swiper/components/pagination/pagination.scss";
+import "swiper/components/scrollbar/scrollbar.scss";
+import { getProductsByType } from "../../selectors/getProductsByType";
+import { Link } from "react-router-dom";
 
 SwiperCore.use([
 	EffectCoverflow,
@@ -31,14 +28,14 @@ SwiperCore.use([
 	Thumbs,
 ]);
 
-const productsImg = require.context('../../assets/img/products', true);
-console.log(productsImg(`./sublymas-destacados/sublymas-3.jpg`))
+const productsImg = require.context("../../assets/img/products", true);
+console.log(productsImg(`./sublymas-destacados/sublymas-3.jpg`));
 
 export const HomeScreen = () => {
 	const styleImg = {
-		objectFit: 'cover',
-		width: '100%',
-		borderRadius: '0.5rem',
+		objectFit: "cover",
+		width: "100%",
+		borderRadius: "0.5rem",
 	};
 
 	const breakpointSwiper = {
@@ -50,36 +47,29 @@ export const HomeScreen = () => {
 		},
 	};
 
-	const typeMug = 'mugs-destacados';
-	const typeTermo = 'termos-destacados';
-	const typeSublymas = 'sublymas-destacados';
+	const typeMug = "mugs-destacados";
+	const typeTermo = "termos-destacados";
+	const typeSublymas = "sublymas-destacados";
 
 	const mugs = useMemo(() => getProductsByType(typeMug), [typeMug]);
 	const termos = useMemo(() => getProductsByType(typeTermo), [typeTermo]);
-	const sublymas = useMemo(() => getProductsByType(typeSublymas), [
-		typeSublymas,
-	]);
+	const sublymas = useMemo(
+		() => getProductsByType(typeSublymas),
+		[typeSublymas]
+	);
 
-	
-	
 	return (
 		<>
-			<img src={mainPoster} alt="main poster" className="img-fluid" />
-
 			<section className="container">
 				<div className="jumbotron">
-					<h1 className ="title-main">Alblanco</h1>
+					<h1 className="title-main">Alblanco</h1>
 					<p className="p-poster">
-						Te invitamos a soñar y plasmar tus buenos deseos en cada
-						detalle… atrévete a decir tus emociones con tan solo una sonrisa,
-						una mirada, una imagen no lo pienses tanto, contáctanos y atina a
-						tus ideas.
+						Te invitamos a soñar y plasmar tus buenos deseos en cada detalle…
+						atrévete a decir tus emociones con tan solo una sonrisa, una mirada,
+						una imagen no lo pienses tanto, contáctanos y atina a tus ideas.
 					</p>
-					<figure className="img-jumbotron">
-						<img src={cup} alt="taza" className="img-fluid" />
-					</figure>
 				</div>
-				<hr className ="divider"/>
+				<hr className="divider" />
 				<h2 className="title-main">Lo que hacemos</h2>
 				<p className="articles">
 					Personaliza tus detalles y sorpréndelos con un regalo único y genial.
@@ -103,7 +93,7 @@ export const HomeScreen = () => {
 				>
 					{/* to={`./producto/${id}`} */}
 					{mugs.map((mug) => (
-						<SwiperSlide key={mug.id} tag="li" style={{ listStyle: 'none' }}>
+						<SwiperSlide key={mug.id} tag="li" style={{ listStyle: "none" }}>
 							<Link to={`./producto/${mug.id}`}>
 								<img
 									src={productsImg(`./${mug.type}/${mug.id}.jpg`).default}
@@ -134,7 +124,7 @@ export const HomeScreen = () => {
 					// onSlideChange={() => console.log('slide change')}
 				>
 					{termos.map((termo) => (
-						<SwiperSlide key={termo.id} tag="li" style={{ listStyle: 'none' }}>
+						<SwiperSlide key={termo.id} tag="li" style={{ listStyle: "none" }}>
 							<Link to={`./producto/${termo.id}`}>
 								<img
 									src={productsImg(`./${termo.type}/${termo.id}.jpg`).default}
@@ -165,7 +155,7 @@ export const HomeScreen = () => {
 					// onSlideChange={() => console.log(productsImg(`./sublymas-destacados`))}
 				>
 					{sublymas.map((sublym) => (
-						<SwiperSlide key={sublym.id} tag="li" style={{ listStyle: 'none' }}>
+						<SwiperSlide key={sublym.id} tag="li" style={{ listStyle: "none" }}>
 							<Link to={`./producto/${sublym.id}`}>
 								<img
 									src={productsImg(`./${sublym.type}/${sublym.id}.jpg`).default}
